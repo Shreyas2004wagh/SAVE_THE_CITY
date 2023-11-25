@@ -1,6 +1,6 @@
 # FEWD-CA2
 
-You Can Play the Game Here : 
+You Can Play the Game Here : https://shreyas2004wagh.github.io/CA2_FEWD_/
 
 # Game Idea : 
 Catch the bombs to save the city.
