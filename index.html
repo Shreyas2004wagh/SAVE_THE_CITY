@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Save the city</title>
+</head>
+<body id="main">
+    <div class="container">
+        <div class="playerinfo">
+            <form action="game.html">
+                <label for="name">
+                    <h2>Player Name</h2>
+                </label>
+                <input type="text"name="name" id="name" pattern="[A-Za-z]+" required>
+                <label for="nickname">
+                    <h2>Nickname</h2>
+                </label>
+                <input type="text"  name="name" id="nickname" pattern="[A-Za-z]+" required>
+                <label for="difficulty"><h2>Choose Your Difficulty</h2></label>
+                <select name="difficulty" id="difficulty">
+                    <option label="Easy" value="easy"></option>
+                    <option label="Medium" value="medium"></option>
+                    <option label="Difficult" value="difficult"></option>
+                </select>
+                    <button id="playbtn" type="submit">PLAY</button>
+            </form>
+            <div id="container1">
+                <a href="instructions.html" id="instructions">
+                    <h1>INSTRUCTIONS</h1>
+                </a>
+            
+            </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>

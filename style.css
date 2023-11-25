@@ -1,0 +1,662 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  
+}
+.board
+body{
+    overflow: hidden;
+}
+#main {
+    background-image: url('assets/2205_w053_n004_53b_p1_53.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name p{
+    color: #FF634A;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF634A;
+    height: 35vh;
+    width: 20vw;
+    margin-top: 300px;
+    border-radius: 10px;
+    margin-right: 170px;
+    font-size: 1rem;
+    border: 5px solid black;
+}
+
+#playbtn {
+    background-color: #FF634A ;
+    color: black;
+    padding: 3px 10px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1000px;
+    width: 50%;
+}
+
+input {
+    font-size: 1.5rem;
+    width: 250px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.difficulty {
+    margin-bottom: 20px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+.gametype {
+    background-color: green;
+    color: white;
+}
+
+select {
+    width: 100px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-weight: bolder;
+}
+
+
+
+/* Game */
+
+#gamebody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/8368290_2332.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.gamebody img {
+    position: relative;
+    width: 70px;
+}
+
+
+.end {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+}
+
+#instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.8;
+}
+
+#instruction ul {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#instruction h1 {
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+#instruction button {
+    cursor: pointer;
+    font-size: 3rem;
+    background-color: yellow;
+    padding: 5px;
+}
+
+.bombs {
+    width: 100vw;
+}
+
+.allbombs{
+    position: absolute;
+    animation: fall 3s linear infinite;
+}
+
+
+@keyframes fall {
+    0% {
+        top: -10vh;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+/* Gameover */
+
+#gameover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/2205_w053_n004_53b_p1_53.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    font-size: 1.6rem;  
+    margin-top: 10px;
+}
+#message h1{
+    font-size: 4rem;
+    padding: 20px;
+}
+
+
+
+#name h1{
+    color: darkgoldenrod;
+    font-size: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#instructions {
+    background-color: yellow;
+    padding: 20px;
+    border-color: black;
+    border: 5px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    color: black;
+}
+
+#instructions h1 {
+    margin: 0; 
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+#instructions1 {
+    display: flex;
+    background-color: yellow;
+    padding: 20px;
+    border-color: black;
+    border: 5px solid black;
+    
+    
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+#instructions1 h1 {
+    margin: 0; 
+    cursor: pointer; 
+}
+#content {
+    height: 430px;
+    width: 730px;
+    background-color: yellow;
+    margin: auto; /* Center horizontally */
+    margin-top: 200px; /* Adjust the top margin as needed */
+    border: 10px solid black;
+}
+
+#content1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#play{
+   text-decoration: none;
+   display: flex;
+   
+   margin-left: 450px;
+   margin-top: 30px;
+    
+    
+}
+#play h1 {
+    background-color: yellow;
+   color: black;
+   
+   border: 5px solid black;
+}
+#new1 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.timer{
+margin-left: 1655px;
+width: 250px;
+height: 58px;
+flex-shrink: 0;
+background: rgba(0, 128, 0, 0.50);
+color: #FFF;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 800;
+
+margin-top: -70px;
+
+    
+}
+
+.score-board{
+
+margin-left: 0px;
+width: 250px;
+height: 58px;
+flex-shrink: 0;
+background: rgba(0, 128, 0, 0.50);
+color: #FFF;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+.gametype {
+    background-color: green;
+    color: white;
+}
+
+select {
+    width: 100px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-weight: bolder;
+}
+#nextBtn {
+    position: absolute;
+    cursor: pointer;
+    bottom: 12px;
+    right: 30px;
+}
+
+.cursor {
+    border-right: 2px solid;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+h1,p,.cursor{
+    display: inline;
+}
+
+.cursor {
+    background-color: black;
+}
+
+
+#gamebody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/8368290_2332.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+#man {
+    position: absolute;
+    width: 10%;
+    top: 80%;
+    left: 0%;
+    height: 150px;
+    width: 100px;
+}
+
+.gamebody img {
+    position: relative;
+    width: 70px;
+}
+
+
+.end {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+}
+
+#instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.8;
+}
+
+#instruction ul {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+#instruction h1 {
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+#instruction button {
+    cursor: pointer;
+    font-size: 3rem;
+    background-color: yellow;
+    padding: 5px;
+}
+
+.bombs {
+    width: 100vw;
+}
+
+.allbombs{
+    position: absolute;
+    animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10vh;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+
+#gameover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/2205_w053_n004_53b_p1_53.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    font-size: 1.6rem;  
+    margin-top: 10px;
+}
+#playagainbtn{
+    cursor: pointer;
+    background-color: #FF7841;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: black;
+}
+
+#home {
+    cursor: pointer;
+    background-color: #FF7841;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: black;
+}
+
+#message h1{
+    font-size: 4rem;
+    padding: 20px;
+    
+}
+
+#gameinfo {
+    background: orange;
+    width: 500px;
+    border-radius: 20px;
+    border: 5px solid;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#name h1{
+    color: darkgoldenrod;
+    font-size: 5rem;
+}
+
+
+
+@media (max-width:600px) {
+    .container {
+        height: 100%;
+        margin: 0px 10px;
+    }
+    
+    form {
+        width: 300px;
+        height: 45vh;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF634A;
+        height: 45vh;
+        width: 300px;
+        margin-top: 40px;
+        border-radius: 10px;
+        margin-right: 10px;
+        font-size: 1rem;
+        border: 5px solid black;
+    }
+    
+
+    .difficulty {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #playbtn {
+        width: 200px;
+    }
+
+    /* Game */
+
+    #gamebody {
+        background-attachment: fixed;
+        height: 100vh;
+        width: 100vw;
+    }
+    #instruction {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #instruction h1{
+        font-size: 2.5rem;
+    }
+
+    #instruction ul {
+        font-size: 1.2rem;
+        width: 40vh;
+        margin: 0px;
+    }
+
+    #nextBtn {
+        height: 5vh;
+    }
+
+    /* Gameover */
+
+    #gameover {
+        background-position: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0px;
+    }    
+
+    #gameover h1{
+        color: black;
+        font-size: 2rem;
+    }
+
+    #playagainbtn {
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+
+    #home {
+        font-size: 2rem;
+    }
+
+    #gameinfo {
+        width: 300px;
+    }
+
+    #name h1{
+        color: darkgoldenrod;
+        font-size: 3rem;
+    }
+
+    #main {
+        background-image: url('assets/mobile.jpg');
+        background-position: 50%;
+        background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+        
+    }
+    #play{
+        text-decoration: none;
+        display: flex;
+        
+        margin-left: 100px;
+        margin-top: 30px;
+         
+         
+     }
+     #play h1 {
+         background-color: yellow;
+        color: black;
+        
+        border: 5px solid black;
+     }
+     #content {
+        height: 430px;
+        width: 450px;
+        background-color: yellow;
+        margin: auto; /* Center horizontally */
+        margin-top: 200px; /* Adjust the top margin as needed */
+        border: 10px solid black;
+    }
+    
+    #content1 {
+        text-align: center;
+        font-size: 30px;
+    }
+.score-board{
+
+    margin-left: 0px;
+    width: 170px;
+    height: 58px;
+    flex-shrink: 0;
+    background: rgba(0, 128, 0, 0.50);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    }
+    #new1 {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+    }
+    
+    
+    .timer{
+    margin-left: 190px;
+    margin-top: -60px;
+    width: 170px;
+    height: 58px;
+    flex-shrink: 0;
+    background: rgba(0, 128, 0, 0.50);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    
+        
+    }
+    
+    #man {
+        position: absolute;
+        width: 10%;
+        top: 80%;
+        left: 0%;
+        height: 150px;
+        width: 100px;
+    }
+    
+} 
